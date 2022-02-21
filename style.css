@@ -1,0 +1,120 @@
+body{
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: Chivo;
+  color: rgb(82, 82, 82);
+}
+
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner{
+  background-image: url(images/background.jpg);
+  padding: 150px 0;
+  background-position: center;
+  background-size: cover;  
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.banner h1{
+  color: white;
+  font-size: 45px;
+  margin: 0;
+}
+
+.banner p {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.banner a{
+  color: white;
+  background-color: #0D1EC6;
+  padding: 16px 48px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+
+}
+
+.banner a:hover{
+  background-color: rgb(15, 15, 105);
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card-white{
+  border-radius: 4px;
+  box-shadow: 0 0 16px rgb(0 0 0 / 20%);
+  background-color: white;
+  padding: 24px;
+  width: 200px;
+  text-align: center;
+}
+
+.card-white p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.card-white img{
+  width: 100%;
+  height: 180px;
+  border-radius: 4px;
+}
+
+.card-white:hover{
+  box-shadow: 3px 3px 16px rgba(0,0,0, 0.8);
+}
+
+
+.footer {
+  background-color: grey;
+  color: white;
+  padding: 40px 40px;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+    margin: 10px;
+  }
+
+  h2{
+    margin-left: 10px;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
